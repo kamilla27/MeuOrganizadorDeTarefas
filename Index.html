@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Tarefas</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><span role="img" aria-label="Bloco de notas">🗒️</span> Organizador de Tarefas <span role="img" aria-label="Feliz">😊</span></h1>
+        
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="🔍 Buscar tarefas...">
+            <select id="filterPriority">
+                <option value="">📋 Todos</option>
+                <option value="low">🟢 Baixa</option>
+                <option value="medium">🟡 Média</option>
+                <option value="high">🔴 Alta</option>
+            </select>
+            <input type="date" id="filterDueDate">
+        </div>
+        
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="📝 Adicione uma nova tarefa" required>
+            <select id="prioritySelect">
+                <option value="low">🟢 Baixa</option>
+                <option value="medium">🟡 Média</option>
+                <option value="high">🔴 Alta</option>
+            </select>
+            <input type="date" id="dueDateInput">
+            <input type="text" id="categoryInput" placeholder="🎯 Categoria (opcional)">
+            <button type="submit" id="addTaskButton">Adicione a Tarefa 🚀</button>
+        </form>
+        
+        <p id="feedbackMessage"></p>
+        
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Rodapé com a marcação do projeto e link para o site -->
+    <footer>
+        <p>&copy; 2024 <strong><a href="https://github.com/kamilla27" target="_blank">InstaSitesWeb</a></strong>. Todos os direitos reservados. Projeto desenvolvido por <strong>Kamilla Gonçalves</strong>.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
